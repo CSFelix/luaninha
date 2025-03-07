@@ -1,0 +1,68 @@
+/*
+	***********
+	** Fonts **
+	***********
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+/*
+	***********
+	** Reset **
+	***********
+*/
+* {
+	margin:  0;
+	padding:  0;
+	outline:  none;
+	list-style: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	vertical-align: baseline;
+
+	user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+/*
+	***************
+	** Variables **
+	***************
+*/
+:root {
+	--background-color-1: #a1e3f9;
+	--background-color-2: #f6f6ff;
+	--background-color-3: #363636;
+
+	--scrollbar-color-1: #6c9aa6;
+	--scrollbar-color-2: #4daac4;
+	--scrollbar-color-3: #328da8;
+
+	--color-1: #363636;
+	--color-2: #f6f6ff;
+
+	--font-1: Roboto Mono;
+	--font-2: Roboto;
+	--font-3: sans-serif;
+}
+
+/*
+	**************
+	** Defaults **
+	**************
+*/
+body {
+	overflow-x: hidden;
+	font: 400 18px var(--font-1), var(--font-3);
+  background: var(--background-color-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--color-2); }
+
+button { font: 400 14px var(--font-2), var(--font-3); }
