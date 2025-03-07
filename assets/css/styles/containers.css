@@ -1,0 +1,230 @@
+/*
+	*********************
+	** Start Container **
+	*********************
+*/
+#kirbyIcon {
+	width: 75px;
+	height: 75px;
+	cursor: pointer;
+	transition: all 0.30s ease;
+}
+
+#kirbyIcon:hover {
+	transform: translateY(-5px);
+}
+
+
+
+/*
+	***********************
+	** Content Container **
+	***********************
+*/
+#songComponent {
+	visibility: 0.00;
+	position: absolute;
+}
+
+
+
+/*
+	******************************************************
+	** Content Container - Active and Common Containers **
+	******************************************************
+*/
+.activeContentContainer {
+	display: flex !important;
+}
+
+.commonContentContainer {
+	width: 100.00%;
+	height: 90.00%;
+	background-color: var(--background-color-2);
+
+	display: none;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1em;
+	padding: 1em;
+	overflow-y: auto;
+}
+
+
+
+/*
+	*********************************
+	** Content Container - Moments **
+	*********************************
+*/
+#contentMomentsContainer span {
+	text-indent: 1em;
+	text-align: justify;
+}
+
+#contentMomentsImagesContainer {
+	width: 100.00%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	gap: 1.00em;
+}
+
+.contentMomentsImage {
+	object-fit: cover;
+	border-radius: 7px;
+	border: 3px solid var(--background-color-3);
+	cursor: pointer;
+	transition: all 0.30s ease;
+}
+
+.contentMomentsImage:hover {
+	transform: translateY(-5px);
+	opacity: 0.90;
+}
+
+
+
+/*
+	*******************************
+	** Content Container - Gifts **
+	*******************************
+*/
+#contentGiftsContainer {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.contentGiftCard {
+	width: 300px;
+	height: 500px;
+	border-radius: 7px;
+	transition: transform 0.30s ease, opacity 0.30s ease;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.00em;
+
+	background-color: var(--background-color-1);
+}
+
+.contentGiftCard:hover {
+	transform: translateY(-5px);
+	opacity: 0.90;
+}
+
+.contentGiftCardBack {
+	cursor: pointer;
+}
+
+.contentGiftCardIcon {
+	border-radius: 50.00%;
+	font-size: 2.00em;
+	padding: 0.25em;
+	background-color: var(--background-color-2);
+	transition: all 0.30s ease;
+}
+
+.contentGiftCardDescription {
+	padding: 0.50em;
+	border-radius: 7px;
+	background-color: var(--background-color-3);
+	color: var(--color-2);
+}
+
+
+
+/*
+	**********************************
+	** Content Container - Feedback **
+	**********************************
+*/
+#contactForm {
+	width: 100.00%;
+	height: 100.00%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#contactFormFieldset {
+	width: 100.00%;
+	height: 100.00%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1.00em;
+}
+
+.contactFormFieldTextArea {
+	width: 80.00%;
+	height: 80.00%;
+	padding: 1.00em;
+	border-radius: 7px;
+	resize: none;
+	outline: none;
+	border: 1px solid var(--background-color-3);
+}
+
+.contactFormButton {
+	background-color: var(--background-color-3);
+	color: var(--color-2);
+	outline: none;
+	border: none;
+	padding: 0.50em;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all 0.30s ease;
+}
+
+.contactFormButton:hover {
+	transform: translateY(-5px);
+	opacity: 0.90;
+}
+
+
+
+/*
+	*********************************
+	** Content Container - Buttons **
+	*********************************
+*/
+#contentButtonsContainer {
+	width: 100.00%;
+	height: 10.00%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	background-color: var(--background-color-3);
+}
+
+.contentButton {
+	background-color: var(--background-color-2);
+	border-radius: 50.00%;
+	padding: 0.25em;
+	transition: all 0.30s ease;
+	cursor: pointer;
+}
+
+.contentButton:hover {
+	transform: translateY(-5px);
+}
+
+.activeContentButton {
+	background-color: var(--background-color-1);
+}
